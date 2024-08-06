@@ -200,6 +200,10 @@ const Modal = function (props) {
                       <option value="1500">1500</option>
                       <option value="2000">2000</option>
                       <option value="5000">5000</option>
+                      <option value="10000">10s</option>
+                      <option value="20000">20s</option>
+                      <option value="60000">60s</option>
+                      <option value="120000">2m</option>
                     </select>
                   </div>
                 </div>

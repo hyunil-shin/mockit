@@ -5,6 +5,8 @@ services:
     build: 'mockit-routes'
     ports:
       - 3000:3000
+    environment:
+      - TZ: "Asia/Seoul"
     volumes:
       - ./configuration/routes.json:/usr/src/mockit-routes/configuration/routes.json
   mockit-server:

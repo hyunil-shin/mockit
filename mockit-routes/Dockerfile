@@ -1,5 +1,7 @@
 FROM node:11.4.0-alpine
 
+RUN apk add tzdata
+
 RUN mkdir -p /usr/src/mockit-routes
 WORKDIR /usr/src/mockit-routes
 

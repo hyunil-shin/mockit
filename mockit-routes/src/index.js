@@ -45,6 +45,9 @@ routes.forEach((route) => {
       headers.forEach(({ header, value } = {}) => {
         res.set(header, value);
       });
+      // logging
+      let ip = req.headers['x-real-ip'] || req.connection.remoteAddress;
+      console.log(`${(new Date()).toLocaleString()}: ${ip} ${path}, response => status code: ${statusCode}`)
       res.status(statusCode).send(payload);
     });
   }

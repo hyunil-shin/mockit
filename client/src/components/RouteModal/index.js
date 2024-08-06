@@ -226,6 +226,14 @@ const Modal = function (props) {
                 >
                   Randomly Generate Data
                 </a>
+                <br />
+                <a
+                  className="button is-small is-pulled-right random-data is-primary is-inverted"
+                  onClick={() => updatePayload({'bigsize': faker.lorem.word(100)})}
+                  aria-label="route-1m-generate-data"
+                >
+                  Generate 1M Data
+                </a>
               </div>
             </div>
             <hr />
